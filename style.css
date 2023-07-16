@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Oswald', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+ background: #013826;
+}
+
+.app{
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 15px;
+  padding: 30px;
+  display: block;
+}
+
+.app h1{
+  font-size: 25px;
+  color: #013826;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+.quiz{
+  padding: 20px 0;
+}
+
+.quiz h2{
+  font-size: 18px;
+  color: #013826;
+  font-weight: 600;
+}
+
+.btn {
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: left;
+  border-radius: 4px;
+  background-color: #ccc;
+  color: #333;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover{
+  background: #222;
+  color: #fff;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.btn:hover:not([diabled]) {
+  background: #222;
+  color: #bbb;
+}
+
+.btn:disabled{
+  cursor: no;
+}
+#next-btn{
+  background: #013826;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+}
+
+#finish-btn{
+  background: #013826;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+}
+
+#timer {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Update the .btn class to have a green background color for correct answers and a red background color for incorrect answers */
+
+.btn.correct {
+  background-color: green;
+  color: white;
+}
+
+.btn.incorrect {
+  background-color: red;
+  color: white;
+}
+
+.leaderboard {
+  margin-top: 30px;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaderboard h1 {
+  font-size: 20px;
+  color: #013826;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.leaderboard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.leaderboard li {
+  padding: 10px 0;
+}
+
+.leaderboard li:hover {
+  background-color: #ccc;
+}
